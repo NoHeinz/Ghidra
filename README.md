@@ -10,7 +10,7 @@ https://ghidra-sre.org/
 
 ## Loading a Binary
 
-1. When launching for the first time you'll come across this screen:
+1. When launching Ghidra for the first time you'll come across this screen:
 
    ![defaultLaunch](images/defaultLaunch.jpg)
 
@@ -51,7 +51,7 @@ https://ghidra-sre.org/
 
    ![selectedFileDialog.jpg](images/selectedFileDialog.jpg)
 
-9. Once the OK button is hit, a loader should appear indicating hat the file is being imported into the project.
+9. Once the OK button is hit, a loader should appear indicating that the file is being imported into the project.
 
    ![importLoader.jpg](images/importLoader.jpg)
 
