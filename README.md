@@ -9,58 +9,76 @@
 ## Loading a Binary
 
 1. When launching for the first time you'll come across this screen:
+
    ![defaultLaunch](images/defaultLaunch.jpg)
 
     Here we have an empty screen since no project is selected. So lets create a new project!
 
 2. We can create a new project by hitting File, then hitting the New Project option in the menu.
+
    ![newProjectDropdown](images/newProjectDropdown.jpg)
 
 3. Now that we've decided to create a new project, we must select a project type. Ghidra allows you to work on shared projects among multiple collaborators by choosing     the shared project option. In this case we'll be working solo, so we will select the Non-Shared Project option and hit next.
+
    ![projectTypeSelection](images/projectTypeSelection.jpg)
 
 4. We've selected what type of project we want, so now we have to select where to store it, and what to name it.
+
    ![nameandDirectorySelect](images/nameandDirectorySelect.jpg)
 
    The location and name will/can vary but should look similar to this when filled out:
-   Once filled out feel free to hit the finish button.
+   
    ![filledproj.jpg](images/filledproj.jpg)
+   
+   Once filled out feel free to hit the finish button.
+   
 
 5. After hitting finish, you should be presented with a similar screen as seen in step one, but this time with some more options and an active project shown.
+
    ![initializedProject.jpg](images/initializedProject.jpg)
 
 6. Our project is now created! Now we'll want to add a binary to examine. To do this we'll want to import a file. This can be achieved by hitting File, then selecting      the Import File option in the menu.
+
    ![importDropdown.jpg](images/importDropdown.jpg)
 
 7. Once the import file option is selected, a file explorer window will appear, from there you will need to navigate to wherever your binary is located. Select the        binary by either double clicking the file, or by selecting the file and hitting the Select File to Import button
+
    ![importButton.jpg](images/importButton.jpg)
 
 8. Once the binary is selected a new window should appear. This window has 4 fields: Format, which is the format type for the file i.e. ELF, PE, etc., Language, which    is the compiler Ghidra thinks was used to compile the binary. Destination Folder, which is the destination folder the binary is being imported to, and finally,        Program Name, which is the name of the file selected. You can either change these options to your liking or accept the pre-populated fields and hit OK
+
    ![selectedFileDialog.jpg](images/selectedFileDialog.jpg)
 
 9. Once the OK button is hit, a loader should appear indicating hat the file is being imported into the project.
+
    ![importLoader.jpg](images/importLoader.jpg)
 
 10. Once the import loader is finished you'll be brought to an import summary screen. This screen contains some information about the imported file. Once you're        satisfied with reading the results, you can hit the OK button.
+
     ![importsummary.jpg](images/importsummary.jpg)
 
 11. After hitting OK you will be taken back to the screen seen in step 5, but now you should see your newly imported file!
+
     ![projectAfterImport.jpg](images/projectAfterImport.jpg)
 
 12. Now at this point you probably want to do some analysis. Now you can! Either double click on the newly imported binary or select the binary and click the dragon icon and analysis can begin.
 
 13. Once step 12 is completed you should now be at a screen similar to this:
+
     ![analyze.jpg](images/analyze.jpg)
 
     Unless you're in a rush to start looking at the file without Ghidra's analysis you'll want to hit Yes.
 
 14. Upon hitting yes, you'll be taken to a screen with options you can select from for the analysis. Most are selected by default, but you can deselect or select to       your hearts content. Once your wanted options are selected hit Analyze.
+
     ![analyzeOptions.jpg](images/analyzeOptions.jpg)
 
 15. Ghidra is now analyzing the file. In the bottom right hand corner, you should see a little loader bar to indicate it's analyzing the file. If you don't see a           loader don't worry, it may have just finished analyzing before you were finished reading this step!
+
     ![analyzeloader.jpg](images/analyzeloader.jpg)
 
 16. Once that loader is gone, you should see a screen similar to this.
+
     ![analyzeComplete.jpg](images/analyzeComplete.jpg)
 
     Your binary is now fully ready to be analyzed!
