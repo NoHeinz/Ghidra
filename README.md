@@ -132,11 +132,31 @@ https://ghidra-sre.org/
 
 ## 6. Defined Strings
 
+
+
+
     a. List of all hard coded strings in program
 
     b. Very helpful to identify hard coded strings(Software\Microsoft\Windows\CurrentVersion\Run is common file string in malware)
 
 ![stringData](images/definedStrings.png) 
+
+If the strings window is not on your Ghidra layout by default, it can be accessed by clicking the Window tab, and selecting Defined Strings from the menu.
+
+![stringsLocation](images/stringsLocation.jpg) 
+
+This provides the same functionality as using the strings command in Linux
+
+![linuxStrings](images/linuxStrings.jpg) 
+
+or the Strings in file section in PPEE,
+
+![PPEEStrings](images/PPEEStrings.jpg) 
+
+
+but with the additional benefit of being able to click on the string and jump to its exact location!
+
+![GhidraString](images/GhidraString.jpg) 
 
 
 ## 7. Symbol Casting
